@@ -1,0 +1,37 @@
+header {
+    background-color: var(--light-solid)
+}
+
+.navbar {
+    display: grid;
+    height: 150px;
+    align-content: start;
+    grid-template-columns: 350px 1fr;
+    grid-template-areas: 
+    'logo login' 
+    'logo menu';
+    
+}
+
+.navbar__isologo_rec {
+    grid-area: logo;
+}
+
+.navbar__login {
+    grid-area: login;
+    justify-content: end;
+    display: flex;
+    font-size: var(--font-small);
+}
+
+.navbar__menu {
+    grid-area: menu;
+    justify-content: end;
+    display: flex;
+    font-size: var(--font-small);
+}
+
+.navbar__login__icono {
+    width: 24px;
+    height: 24px;
+}
