@@ -1,0 +1,156 @@
+header {
+    background-color: var(--light-solid);
+    padding: var(--spacing-16);
+}
+
+.navbar {
+    display: grid;
+    height: 118px;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    'logo login' 
+    'logo menu';
+    gap: var(--spacing-16);
+    
+}
+
+.navbar__isologo_rec {
+    grid-area: logo;
+    max-width: 350px;
+}
+
+.navbar__login {
+    grid-area: login;
+    justify-content: end;
+    align-items: center;
+    /* align-content: start; */
+    display: flex;
+    font-size: var(--font-small);
+    gap: var(--spacing-16);
+}
+
+.filete_header_login {
+    width: 4px;
+    height: 40px;
+    display: inline;
+    float: left;
+}
+
+.navbar__menu {
+    grid-area: menu;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    font-size: var(--font-small);
+    gap: var(--spacing-20);
+    height: 40px;
+}
+
+.navbar__menu__link_1:hover {
+    background-image: url(../img/filete_btn_menu_header_01.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    align-content: center;
+    font-weight: 600;
+    color: var(--secondary-solid);
+    height: 40px;
+}
+
+.navbar__menu__link_2:hover {
+    background-image: url(../img/filete_btn_menu_header_02.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    align-content: center;
+    font-weight: 600;
+    color: var(--secondary-solid);
+    height: 40px;
+}
+
+.navbar__menu__link_3:hover {
+    background-image: url(../img/filete_btn_menu_header_03.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    align-content: center;
+    font-weight: 600;
+    color: var(--secondary-solid);
+    height: 40px;
+}
+
+.navbar__menu__link_4:hover {
+    background-image: url(../img/filete_btn_menu_header_04.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    align-content: center;
+    font-weight: 600;
+    color: var(--secondary-solid);
+    height: 40px;
+}
+
+.navbar__menu__link_1:active, .navbar__menu__link_2:active,
+.navbar__menu__link_3:active, .navbar__menu__link_4:active {
+    font-weight: 600;
+    color: var(--primary-solid);
+}
+
+
+.navbar__login__btn_f:link, .navbar__login__btn_f:visited {
+    background-image: url(../img/icono_facebook_gris_60.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    width: 16px;
+    height: 24px;
+}
+
+.navbar__login__btn_f:hover, .navbar__login__btn_f:active {
+    background-image: url(../img/icono_facebook_rojo.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float:left;
+    width: 16px;
+    height: 24px;
+}
+
+.navbar__login__btn_i:link, .navbar__login__btn_i:visited {
+    background-image: url(../img/icono_instagram_gris_60.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+.navbar__login__btn_i:hover, .navbar__login__btn_i:active {
+    background-image: url(../img/icono_instagram_rojo.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+.navbar__login__btn_x:link, .navbar__login__btn_x:visited {
+    background-image: url(../img/icono_x_gris_60.svg);
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    width: 29px;
+    height: 20px;
+}
+
+.navbar__login__btn_x:hover, .navbar__login__btn_x:active {
+    background-image: url(../img/icono_x_rojo.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    display: inline;
+    float: left;
+    width: 29px;
+    height: 20px;
+}
+
+
