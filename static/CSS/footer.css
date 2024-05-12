@@ -95,11 +95,13 @@ footer {
 
 .dato__razon_social {
     font-size: var(--font-xsmall);
+    color: white;
 }
 
 .dato__movil {
     font-size: var(--font-xlarge);
     font-weight: 200;
+    color: white;
 }
 
 .dato__mail {
@@ -110,6 +112,7 @@ footer {
 .dato__url {
     font-size: var(--font-large);
     font-weight: 200;
+    color: white;
 }
 
 .filete_footer_large {
@@ -127,6 +130,7 @@ footer {
 .navbar_footer__item {
     font-size: var(--font-xsmall);
     margin-bottom: var(--spacing-12);
+    color: white;
 }
 
 .filete_footer_small {
@@ -144,6 +148,7 @@ footer {
 .navbar_footer__item {
     font-size: var(--font-xsmall);
     margin-bottom: var(--spacing-12);
+    
 }
 
 .navbar_footer__item:hover {
