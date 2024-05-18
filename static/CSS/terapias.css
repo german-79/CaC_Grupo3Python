@@ -1,6 +1,6 @@
 .navbar__titulo {
-    font-size: 3em; /* Tamaño de letra más grande */
-    text-align: center; /* Centrar el texto */
+    font-size: 3em; 
+    text-align: center; 
 } 
 
 body {
@@ -69,3 +69,4 @@ section:hover {
 section:hover h2 {
     color: red;
 }
+
