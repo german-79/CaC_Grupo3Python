@@ -1,72 +1,159 @@
-.navbar__titulo {
-    font-size: 3em; 
-    text-align: center; 
-} 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    background-color: #f0f0f0; 
+:root {
+    /* Colores */
+    --primary-solid: #e20025;
+    
+    --secondary-solid: #3d3d3f;
+    --secondary-600: #868789;
+    --secondary-300: #C6C6C6;
+
+    --light-solid: #ffffff; 
+
+    --primary-bg-solid: #e20025;
+    --secondary-bg-solid: #3d3d3f;
+
+    /* Tipografias */
+    --base-font: "Raleway", sans-serif;
+
+    /* Tamaño Fuentes */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /* Espaciado */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
 }
 
 
-body {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-h2 {
-    color: #333;
-}
-
-p {
-    color: #666;
-}
-
-ul {
-    list-style-type: disc;
-    color: #666;
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin:  auto;
+    padding:  20px;
 }
 
 
-img {
-    max-width: 200px;
+
+/* Estilos del Hero */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero__image {
+    width: %;
     height: auto;
-    display: block;
-    margin: 0 auto
 }
 
+.hero__text {
+    position: absolute;
+    top: 20px; 
+    left: 100px; 
+    text-align: left; 
+    padding: 5px;
+    max-width: 450px;
+}
 
-section h2 {
+.hero__text h1 {
+    font-size: var(--font-xlarge);
+    margin-bottom: 10px;
+}
+
+.hero__text p {
+    font-size: var(--font-medium);;
+    margin: 0;
+}
+
+/* Estilos de las secciones de Terapia */
+.terapia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.terapia__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.terapia__image {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.terapia__text {
+    flex: 2;
+    max-width: auto;
+}
+
+.terapia__text h2 {
     font-size: var(--font-large);
+    margin-bottom: 10px;
+    color: red;
 }
 
-
-section p {
-    font-size: var(--font-small);
+.terapia__text p {
+    font-size: var(--font-medium);
+    margin-bottom: 10px;
 }
 
+.terapia__text ul {
+    list-style: disc;
+    padding-left: 20px;
+}
 
-section ul {
-    font-size: var(--font-small);
-    list-style-type: disc;
-    margin-left: 30px;
+.terapia__text li {
+    font-size: var(--font-medium);
+    margin-bottom: 5px;
 }
 
 section:hover {
-    background-color: #dad6d6;
-    transition: background-color 1.5s ease;
     font-weight: bold;
     transition: font-weight 1.5s ease;
 }
 
-section:hover h2 {
-    color: red;
+/* DE ACA PARA ABAJO PRUEBO CON EL FOTTER*/
+
+
+a {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
 }
+
+header {
+    font-family: var(--base-font);
+    color: var(--secondary-600);
+}
+
+footer {
+    font-family: var(--base-font);
+    color: var(--light-solid);
+}
+
+
+
+
+
+
 
