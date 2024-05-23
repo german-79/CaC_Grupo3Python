@@ -106,3 +106,18 @@ img {
     height: 435px;
     padding: var(--spacing-68) 0;
 }
+
+.hero__titulo {
+    font-size: var(--font-display);
+    color: var(--light-solid);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.hero__bajada_slide {
+    color: var(--light-solid);
+    padding: 5px;
+    max-width: 450px;
+    line-height: var(--font-small);
+}
+
