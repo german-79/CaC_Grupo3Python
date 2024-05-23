@@ -40,7 +40,7 @@
 .titulo-card-medico{
   background-image: url(/static/img/fondo_titulo_profesionales.svg);
    height: 20px;
-   
+  background-repeat: no-repeat; 
 }
  .medicos-terapias{
   display: flex;
