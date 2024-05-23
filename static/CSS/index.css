@@ -82,3 +82,6 @@ img {
     max-width: 1200px;
     margin: 0 auto;
 }
+#ws{width: 60px; height: auto;     
+    position: absolute; right: 1%; bottom: 140px; z-index: 100; position: fixed; cursor: pointer; }
+#ws img{width: 55px; height: auto; }

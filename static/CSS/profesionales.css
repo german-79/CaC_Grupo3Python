@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.cards { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;
+}
+   
+.cards img {
+    width: 100%;
+    padding: 12px 12px 0 12px;
+    aspect-ratio: 1/1;
+  }
+  
+.card {
+    width: 350px;
+  }
+
+#filtros {
+    position: relative;
+    justify-content: space-between;
+}
+
+.name-medico {
+  text-align: center; 
+  padding: 10px; 
+  bottom: 80px;
+  font-family: "Raleway", sans-serif, bolder;
+  color: var(--secondary-solid);
+  box-sizing: border-box;
+  font-size: var(--font-medium);
+  }
+
+  .name-medico span {
+    font-weight: bold;
+  }
+  
+    .turno{
+      font-size: var(--font-medium);
+      cursor: pointer;
+      font-family: "Raleway", sans-serif;
+      font-weight: bolder;
+      background: transparent;
+      transition: all 0.5s ease;
+      color: var(--primary-solid);
+      text-align: center;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    .turno:hover{
+      transform: scale(1.1);
+    }
+    /*HASTA ACÁ VENIMOS BIEN CON LOS PROFESIONALES*/
+  
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .container {
+    max-width: calc(200px + 20px);
+    padding: 10 20px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .category-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    place-content: center;
+    padding: 20px 0;
+  }
+  
+  .category-filters li {
+    font-size: var(--font-medium);
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 14px;
+    font-family: "Raleway", sans-serif;
+    transition: all 0.5s ease;
+    position: relative;
+    color: var(--light-solid);
+  }
+
+  .category-filters li:hover {
+    font-weight: bolder;
+  }
+
+  .category-filters li:hover::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/filete_selector_profesionales.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 10px;
+    width: 50px;
+    height: 40px;
+    z-index: 1;
+  }
+
+  .category-filters li.selected {
+    pointer-events: none;
+  }
+  
+  .category-filters li.selected:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor;
+    view-transition-name: filter-unerline;
+  }
+  /* Hasta acá es del filtro - no tocar!!*/
+    
+.title-filter {
+  font-size: var(--font-large);
+}
+
+button {
+  border:none;
+}
+
+.fotochina {
+  background-image: url("/img/profesional_slide.webp");
+  background-color: var(--primary-solid);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-block: 80px;
+}
+
+.filtro {
+  max-width: 65ch;
+  color:rgb(248, 185, 185);
+  margin-left: 300px;
+}
+
+.profesionales {
+  max-width: 1150px;
+  margin:auto;
+  padding-block: 100px;
+}
+
+.profesionales h2 {
+  text-align: start;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-image: url("img/fondo_titulo_profesionales.svg");
+  padding-block: 16px;
+  color: var(--light-solid);
+  padding-left: 40px;
+  max-width: 750px;
+  margin-left: 130px;
+}
+
+.footer-medico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+.matricula{
+  font-size: var(--font-medium)
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <title>TURNOS</title>
+    <link rel="stylesheet" href="static/css/turnos.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+  </head>
+  <header>
+    <nav class="navbar container">
+      <picture class="navbar__isologo_rec">
+        <a href="index.html"><img src="/static/img/Isologotipo_MediQi_H.svg"
+            alt="MediQi // Medicina Tradicional CHINA"></a>
+      </picture>
+      <ul class="navbar__login">
+        <li class="navbar__login__item">
+          <a class="navbar__login__link" href="templates/login.html">INGRESAR</a>
+        </li>
+        <li>
+          <picture class="filete_header_login">
+            <img src="static/img/filete_header_login.svg" alt="">
+          </picture>
+        </li>
+        <li class="navbar__login__icono">
+          <a class="navbar__login__btn_f" href="http://www.facebook.com"></a>
+        </li>
+        <li class="navbar__login__icono">
+          <a class="navbar__login__btn_i" href="http://www.instagram.com"></a>
+        </li>
+        <li class="navbar__login__icono">
+          <a class="navbar__login__btn_x" href="http://www.x.com"></a>
+        </li>
+      </ul>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">
+          <a class="navbar__menu__link_1" href="templates/institucional.html">MEDIQI</a>
+        </li>
+        <li class="navbar__menu__item">
+          <a class="navbar__menu__link_2" href="templates/terapias.html">TERAPIAS</a>
+        </li>
+        <li class="navbar__menu__item">
+          <a class="navbar__menu__link_3" href="templates/profesionales.html">PROFESIONALES</a>
+        </li>
+        <li class="navbar__menu__item">
+          <a class="navbar__menu__link_4" href="templates/contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body class="image-veil">
+    <div id="header">
+
+      <img src="/statics/img/medica1-turnos.png" alt="Foto del médico seleccionado">
+
+      <h1>Turnos disponibles</h1>
+      <div class="filete"></div>
+    </div>
+
+    <div id="calendar">
+      <div id="week">
+        <div id="hour_column"></div>
+      </div>
+      <form id="add_form">
+        <h2 id="schedule">Programa un turno</h2>
+        <label for="name">Tu nombre</label><br />
+        <input id="name" type="text" /><br />
+        <label for="day">Día</label><br />
+        <select id="day">
+          <option value="Lunes">Lunes</option>
+          <option value="Martea">Martes</option>
+          <option value="Miércoles">Miércoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+        </select><br />
+        <label for="start_time">Hora</label><br />
+        <select id="start_time"></select><br />
+        <button id="add_event_button" type="button">Reservar</button>
+      </form>
+    </div>
+    <footer>
+      <div class="banda_bg__footer_roja">
+        <nav class="navbar_footer container">
+          <div class="navbar_footer__isologo_v">
+            <picture>
+              <a href="index.html"><img src="static/img/Isologotipo_MediQi_V_Blanco.svg"
+                  alt="MediQi // Medicina Tradicional CHINA"></a>
+            </picture>
+          </div>
+          <div class="navbar_footer__datos">
+            <p class="dato__razon_social">MediQi | Medicina tradicional CHINA</p>
+            <p class="dato__movil">11.1234.5678</p>
+            <div class="dato__mail"><a href="mailto:mediqi.mtc@gmail.com">mediqi.mtc@gmail.com</a></div>
+            <p class="dato__url">
+              <a href="http://www.mediqi.com.ar">www.mediqi.com.ar</a>
+            </p>
+          </div>
+          <div class="navbar_footer__menu">
+            <picture class="filete_footer_large">
+              <img src="static/img/filete_footer_large.svg" alt="">
+            </picture>
+            <ul class="navbar_footer__menu__items">
+              <li class="navbar_footer__item"><a href="templates/institucional.html">MEDIQI</a></li>
+              <li class="navbar_footer__item"><a href="templates/terapias.html">TERAPIAS</a></li>
+              <li class="navbar_footer__item"><a href="templates/profesionales.html">PROFESIONALES</a>
+              </li>
+              <li class="navbar_footer__item"><a href="templates/contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
+          <div class="navbar_footer__login">
+            <picture class="filete_footer_small">
+              <img src="static/img/filete_footer_small.svg" alt="">
+            </picture>
+            <ul class="navbar_footer__login__items">
+              <li class="navbar_footer__item"><a href="templates/login.html">INGRESAR</a></li>
+              <li class="navbar_footer__item"><a href="templates/registrese.html">REGISTRESE</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="navbar_footer__redes">
+              <li class="navbar_footer__redes__item">
+                <a class="navbar__footer__btn_f" href="http://www.facebook.com"></a>
+              </li>
+              <li class="navbar_footer__redes__item">
+                <a class="navbar__footer__btn_i" href="http://www.instagram.com"></a>
+              </li>
+              <li class="navbar_footer__redes__item">
+                <a class="navbar__footer__btn_x" href="http://www.x.com"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="banda_bg__footer_gris">
+        <picture class="deco_footer_roja">
+          <img src="static/img/deco_footer_roja.svg" alt="">
+        </picture>
+      </div>
+    </footer>
+
+    <script src="turnos.js" defer></script>
+    <script>
+      const esMedico = window.localStorage.getItem("medico") ?? ""
+      if (esMedico === "") window.location.href = "/"
+
+      const medico = JSON.parse(esMedico)
+      const imagenMedico = document.querySelector("#header img")
+      imagenMedico.src = `img/${medico.thumbnail}`
+    </script>
+  </body>
+
+</html>
