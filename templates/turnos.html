@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>TURNOS</title>
-    <link rel="stylesheet" href="static/css/turnos.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="/static/CSS/turnos.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
   </head>
   <header>
     <nav class="navbar container">
@@ -51,21 +51,146 @@
     </nav>
   </header>
 
-  <body class="image-veil">
+  <body >
+<main>
     <div id="header">
 
-      <img src="/statics/img/medica1-turnos.png" alt="Foto del médico seleccionado">
+      <img src="/static/img/profesional_01.png" alt="Foto Dra. Inge Solle" id="inge">
 
-      <h1>Turnos disponibles</h1>
+      <h1>Turnos disponibles con la Dra. Inge Solle</h1>
       <div class="filete"></div>
     </div>
 
     <div id="calendar">
-      <div id="week">
-        <div id="hour_column"></div>
-      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>12:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+        </tbody>
+      </table>
+      
       <form id="add_form">
-        <h2 id="schedule">Programa un turno</h2>
+        <h2 id="schedule">Reservá tu turno aquí</h2>
         <label for="name">Tu nombre</label><br />
         <input id="name" type="text" /><br />
         <label for="day">Día</label><br />
@@ -80,8 +205,778 @@
         <select id="start_time"></select><br />
         <button id="add_event_button" type="button">Reservar</button>
       </form>
+    </div></div>
+    <div id="header">
+
+      <img src="/static/img/profesional_02.png" alt="Foto Dr. Facundo Irigoyen" id="facundo">
+
+      <h1>Turnos disponibles con el Dr. Facundo Irigoyen</h1>
+      <div class="filete"></div>
     </div>
-    <footer>
+
+    <div id="calendar">
+      <table>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>12:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <form id="add_form">
+        <h2 id="schedule">Reservá tu turno aquí</h2>
+        <label for="name">Tu nombre</label><br />
+        <input id="name" type="text" /><br />
+        <label for="day">Día</label><br />
+        <select id="day">
+          <option value="Lunes">Lunes</option>
+          <option value="Martea">Martes</option>
+          <option value="Miércoles">Miércoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+        </select><br />
+        <label for="start_time">Hora</label><br />
+        <select id="start_time"></select><br />
+        <button id="add_event_button" type="button">Reservar</button>
+      </form>
+    </div></div>
+    <div id="header">
+
+      <img src="/static/img/profesional_03.png" alt="Foto Dra. Annabella MacRae"  id="annabella">
+
+      <h1>Turnos disponibles con la Dra. Annabella MacRae</h1>
+      <div class="filete"></div>
+    </div>
+
+    <div id="calendar">
+      <table>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>12:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <form id="add_form">
+        <h2 id="schedule">Reservá tu turno aquí</h2>
+        <label for="name">Tu nombre</label><br />
+        <input id="name" type="text" /><br />
+        <label for="day">Día</label><br />
+        <select id="day">
+          <option value="Lunes">Lunes</option>
+          <option value="Martea">Martes</option>
+          <option value="Miércoles">Miércoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+        </select><br />
+        <label for="start_time">Hora</label><br />
+        <select id="start_time"></select><br />
+        <button id="add_event_button" type="button">Reservar</button>
+      </form>
+    </div></div>
+    <div id="header">
+
+      <img src="/static/img/profesional_04.png" alt="Foto Dr. Roberto Scheitling" id="roberto">
+
+      <h1>Turnos disponibles con el Dr. Roberto Scheitling</h1>
+      <div class="filete"></div>
+    </div>
+
+    <div id="calendar">
+      <table>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>12:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <form id="add_form">
+        <h2 id="schedule">Reservá tu turno aquí</h2>
+        <label for="name">Tu nombre</label><br />
+        <input id="name" type="text" /><br />
+        <label for="day">Día</label><br />
+        <select id="day">
+          <option value="Lunes">Lunes</option>
+          <option value="Martea">Martes</option>
+          <option value="Miércoles">Miércoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+        </select><br />
+        <label for="start_time">Hora</label><br />
+        <select id="start_time"></select><br />
+        <button id="add_event_button" type="button">Reservar</button>
+      </form>
+    </div></div>
+    <div id="header">
+
+      <img src="/static/img/profesional_05.png" alt="Foto Dr. Liu Ming" id="liu">
+
+      <h1>Turnos disponibles con el Dr. Liu Ming</h1>
+      <div class="filete"></div>
+    </div>
+
+    <div id="calendar">
+      <table>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>12:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <form id="add_form">
+        <h2 id="schedule">Reservá tu turno aquí</h2>
+        <label for="name">Tu nombre</label><br />
+        <input id="name" type="text" /><br />
+        <label for="day">Día</label><br />
+        <select id="day">
+          <option value="Lunes">Lunes</option>
+          <option value="Martea">Martes</option>
+          <option value="Miércoles">Miércoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+        </select><br />
+        <label for="start_time">Hora</label><br />
+        <select id="start_time"></select><br />
+        <button id="add_event_button" type="button">Reservar</button>
+      </form>
+    </div></div>
+    <div id="header">
+
+      <img src="/static/img/profesional_06.png" alt="Foto Dr. Máximo Balanta" id="maximo">
+
+      <h1>Turnos disponibles con el Dr. Máximo Balanta</h1>
+      <div class="filete"></div>
+    </div>
+
+    <div id="calendar">
+      <table>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>12:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>2:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>3:00 PM</td>
+            <td><input type="text"></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 AM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td>8:00 PM</td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <form id="add_form">
+        <h2 id="schedule">Reservá tu turno aquí</h2>
+        <label for="name">Tu nombre</label><br />
+        <input id="name" type="text" /><br />
+        <label for="day">Día</label><br />
+        <select id="day">
+          <option value="Lunes">Lunes</option>
+          <option value="Martea">Martes</option>
+          <option value="Miércoles">Miércoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+        </select><br />
+        <label for="start_time">Hora</label><br />
+        <select id="start_time"></select><br />
+        <button id="add_event_button" type="button">Reservar</button>
+      </form>
+    </div></div>
+</main>
+    
+
+    
+  
+<footer>
       <div class="banda_bg__footer_roja">
         <nav class="navbar_footer container">
           <div class="navbar_footer__isologo_v">
@@ -140,16 +1035,5 @@
         </picture>
       </div>
     </footer>
-
-    <script src="turnos.js" defer></script>
-    <script>
-      const esMedico = window.localStorage.getItem("medico") ?? ""
-      if (esMedico === "") window.location.href = "/"
-
-      const medico = JSON.parse(esMedico)
-      const imagenMedico = document.querySelector("#header img")
-      imagenMedico.src = `img/${medico.thumbnail}`
-    </script>
   </body>
-
 </html>
