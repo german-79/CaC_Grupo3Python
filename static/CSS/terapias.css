@@ -1,8 +1,8 @@
 /* Contenedor principal */
 .container {
     max-width: 1200px;
-    margin:  auto;
-    padding:  20px;
+    margin: auto;
+    padding: 0px;
 }
 
 
@@ -13,30 +13,32 @@
     position: relative;
     text-align: center;
     margin-bottom: 50px;
+
 }
 
 .hero__image {
     width: 100%;
-    height: auto;
+    height: 350px;
 }
 
 .hero__text {
     position: absolute;
     color: aliceblue;
-    top: 20px; 
-    left: 50px; 
-    text-align: left; 
+    top: 20px;
+    left: 50px;
+    text-align: left;
     padding: 5px;
     max-width: 450px;
 }
 
 .hero__text h1 {
-    font-size: var(--font-xlarge);
+    font-size: var(--font-display);
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
 .hero__text p {
-    font-size: var(--font-medium);;
+    font-size: var(--font-medium);
     margin: 0;
 }
 
@@ -69,9 +71,10 @@
 }
 
 .terapia__text h2 {
-    font-size: var(--font-large);
+    font-size: var(--font-jumbo);
     margin-bottom: 10px;
     color: var(--primary-solid);
+    font-weight: 400;
 }
 
 .terapia__text p {
@@ -89,17 +92,9 @@
     margin-bottom: 5px;
 }
 
-section:hover {
-    font-weight: bold;
-    transition: font-weight 1.5s ease;
+
+.filete__terapias {
+    max-width: 400px;
+    height: 25px;
+
 }
-
-
-
-
-
-
-
-
-
-
