@@ -39,40 +39,6 @@
     line-height: var(--font-small);
 }
 
-/* .hero {
-    background-color: #868789;
-    position: relative;
-    text-align: center;
-    margin-bottom: 50px;
-
-}
-
-.hero__image {
-    width: 100%;
-    height: 435px;
-}
-
-.hero__text {
-    position: absolute;
-    color: var(--light-solid);
-    top: 20px;
-    left: 50px;
-    text-align: left;
-    padding: 5px;
-    max-width: 450px;
-}
-
-.hero__text h1 {
-    font-size: var(--font-display);
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-.hero__text p {
-    font-size: var(--font-medium);
-    
-} */
-
 /* Estilos de las secciones de Terapia */
 .terapia {
     display: flex;
