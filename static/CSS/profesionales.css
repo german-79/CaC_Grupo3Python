@@ -14,6 +14,7 @@
   padding-left: 260px;
   padding-top: 60px;
   margin-block: 20px;
+  color: #fff;
 }
 .texto-terapias h2{
   color: solid #fff;
@@ -39,8 +40,11 @@
   }
 .titulo-card-medico{
   background-image: url(/static/img/fondo_titulo_profesionales.svg);
-   height: 20px;
+   height: 40px;
   background-repeat: no-repeat; 
+}
+.titulo-card-medico h2 {
+  color: #fff;
 }
  .medicos-terapias{
   display: flex;
