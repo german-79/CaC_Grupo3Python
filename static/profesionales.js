@@ -94,7 +94,7 @@ function renderMedicos() {
                         <img src="/img/${medico.thumbnail}" alt="Foto de la doctora ${medico.name}">
                         <div class="footer-medico">
                             <div class="name-medico">${genero} <span>${name.join(" ")}</span></div>
-                            <span class="matricula">MP: ${medico?.matricula ?? "2506241559" }</span>
+                            <span class="matricula">MP: ${medico?.matricula ?? "1506241559" }</span>
                             <a href="turnos.html" data-id=${medico.matricula} class="turno">
                                 SACAR TURNO
                             </a>
