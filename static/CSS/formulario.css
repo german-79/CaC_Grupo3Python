@@ -1,0 +1,138 @@
+
+
+*{ padding: 0;
+    margin: 0;}
+    
+    
+    :root{
+    
+        --color-1: #403d13;
+        --color-2:#8c5b49;
+        --color-3:#595519;
+        --color-4: #bfbb80;
+        --color-5:#f2e2c4; 
+        /* paleta1 */
+        --color-6: #d92546;
+        --color-7:#f2e0bd;
+        --color-8:#809483;
+    
+    }
+    
+    h1{
+        font-family: Raleway;
+        background: linear-gradient(to bottom right, #403d13, #f2e0bd);
+        color: white;
+        height: 50px;
+                   }
+    h2{
+       font-family: Raleway;
+       background: linear-gradient(to bottom right, #d92546, #f2e0bd);
+       color: white;
+       text-align: center;
+         height: 40px; 
+        padding-top: 10px;}        
+    .membresia{
+        display: block;
+        margin-top: 10px;
+        text-align: left;
+        padding-left: 25vw;
+        padding-top: 16vh;
+        
+          }
+     .item{
+    padding-top: 10px;
+    
+     }    
+    #sociomembresia{
+        text-align: center;
+        background-image: url(../img/imagenfrascorecortada.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        height: 500px;
+       }         
+    .item1{
+        color: black;
+    }
+    
+     /*.container-registro{
+        display: flex;
+    }*/
+    #formulariocontacto{
+        font-size: 5px;
+        text-align: center;
+        
+        
+        /*background-clip: text;*/
+        
+        font-size: larger;
+        margin: 20;
+    }
+    
+    
+    #datos{
+         background-image: url(..//img/Imagenbudafondo.jpg); 
+         background-repeat: no-repeat;
+        background-size: 100vw;
+        height: 933px;
+        background-color: rgba(255, 255, 255, 0.404);
+        
+    }
+    
+    
+    
+    
+    .afiliado{
+        display: flex;
+        
+    }
+    .item{
+        background-color: rgba(255, 255, 255, 0.404);
+        text-align: end;
+        /*padding-right: 10vw;*/
+        padding-bottom: 4vh;
+        padding: 2vh 10vw 1vh 0;
+        display: block;
+     
+    }   
+    label {
+        color: black;
+        font-weight: bold;
+        
+    }
+    .uno{
+        color: black; 
+        font-weight: bold;
+        display: flex;
+        padding-left: 58.5vw;
+        text-align: right;
+        background-color: rgba(255, 255, 255, 0.404);
+        
+        padding-bottom: 2vh;
+    }
+    #checkbox{   text-align: right; font-weight: bold;
+    }
+    
+    .dos {display: flex;  font-weight: bold;
+    text-align: right;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    float: right;
+    }
+    
+    .como{
+        text-align: center;
+        background-image: url(../img/b2ap3_large_hierbas.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        height: 200px;
+        padding-top: 30px;
+        
+       } 
+       .redes{
+        width: 20vw;
+        text-align: left;
+        padding-left: 40vw;
+        align-content: space-between;
+        padding-top: 2vh;
+        
+       }        
