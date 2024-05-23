@@ -39,14 +39,15 @@
     margin-top: 80px;
   }
 .titulo-card-medico{
-  background-image: url(/static/img/fondo_titulo_profesionales.svg);
-   height: 30px;
+  background-image: url(/static/img/fondo_titulo_profesionales.svg) ;
+   height: 60px;
   background-repeat: no-repeat; 
-  width: 160px;
+  width: 460px;
 }
 .titulo-card-medico h2 {
   color: #fff;
   padding-left: 40px;
+  padding-top: 10px;
 }
  .medicos-terapias{
   display: flex;
