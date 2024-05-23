@@ -49,6 +49,10 @@ html {
     font-family: var(--base-font);
 }
 
+main {
+    padding: var(--spacing-28) 0;
+}
+
 a {
     text-decoration: none;
     font-size: inherit;
@@ -62,6 +66,7 @@ header {
 }
 
 footer {
+    position: relative;
     font-family: var(--base-font);
     color: var(--light-solid);
 }
@@ -85,3 +90,19 @@ img {
 #ws{width: 60px; height: auto;     
     position: absolute; right: 1%; bottom: 140px; z-index: 100; position: fixed; cursor: pointer; }
 #ws img{width: 55px; height: auto; }
+
+.hero__slide {
+    background-color: var(--secondary-solid);
+    width: 100%;
+    height: 435px;
+    border: none;
+}
+
+.hero__content {
+    background-image: url(../img/Terapias_Slide.png);
+    background-size: auto;
+    background-repeat: none;
+    border: none;
+    height: 435px;
+    padding: var(--spacing-68) 0;
+}
