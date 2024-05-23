@@ -1,4 +1,34 @@
+/* Estilos del Hero */
 
+.hero__slide {
+    background-color: var(--secondary-solid);
+    width: 100%;
+    height: 435px;
+    border: none;
+}
+
+.hero__content {
+    background-image: url(../img/contacto_slide.png);
+    background-size: auto;
+    background-repeat: none;
+    border: none;
+    height: 435px;
+    padding: var(--spacing-68) 0;
+}
+
+.hero__titulo {
+    font-size: var(--font-display);
+    color: var(--light-solid);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.hero__bajada_slide {
+    color: var(--light-solid);
+    padding: 5px;
+    max-width: 450px;
+    line-height: var(--font-small);
+}
 
 *{ padding: 0;
     margin: 0;}
@@ -18,121 +48,12 @@
     
     }
     
-    h1{
-        font-family: Raleway;
-        background: linear-gradient(to bottom right, #403d13, #f2e0bd);
-        color: white;
-        height: 50px;
-                   }
-    h2{
-       font-family: Raleway;
-       background: linear-gradient(to bottom right, #d92546, #f2e0bd);
-       color: white;
-       text-align: center;
-         height: 40px; 
-        padding-top: 10px;}        
-    .membresia{
-        display: block;
-        margin-top: 10px;
-        text-align: left;
-        padding-left: 25vw;
-        padding-top: 16vh;
-        
-          }
-     .item{
-    padding-top: 10px;
-    
-     }    
-    #sociomembresia{
-        text-align: center;
-        background-image: url(../img/imagenfrascorecortada.png);
-        background-repeat: no-repeat;
-        background-size: 100vw;
-        height: 500px;
-       }         
-    .item1{
-        color: black;
-    }
-    
-     /*.container-registro{
+    .form__contenedor {
         display: flex;
-    }*/
-    #formulariocontacto{
-        font-size: 5px;
-        text-align: center;
-        
-        
-        /*background-clip: text;*/
-        
-        font-size: larger;
-        margin: 20;
+        gap: 10px;
+        font-family: var(--base-font);
+        justify-content: left;
+        padding: 40px 0;
     }
+
     
-    
-    #datos{
-         background-image: url(..//img/Imagenbudafondo.jpg); 
-         background-repeat: no-repeat;
-        background-size: 100vw;
-        height: 933px;
-        background-color: rgba(255, 255, 255, 0.404);
-        
-    }
-    
-    
-    
-    
-    .afiliado{
-        display: flex;
-        
-    }
-    .item{
-        background-color: rgba(255, 255, 255, 0.404);
-        text-align: end;
-        /*padding-right: 10vw;*/
-        padding-bottom: 4vh;
-        padding: 2vh 10vw 1vh 0;
-        display: block;
-     
-    }   
-    label {
-        color: black;
-        font-weight: bold;
-        
-    }
-    .uno{
-        color: black; 
-        font-weight: bold;
-        display: flex;
-        padding-left: 58.5vw;
-        text-align: right;
-        background-color: rgba(255, 255, 255, 0.404);
-        
-        padding-bottom: 2vh;
-    }
-    #checkbox{   text-align: right; font-weight: bold;
-    }
-    
-    .dos {display: flex;  font-weight: bold;
-    text-align: right;
-    padding-top: 4px;
-    padding-bottom: 2px;
-    float: right;
-    }
-    
-    .como{
-        text-align: center;
-        background-image: url(../img/b2ap3_large_hierbas.jpg);
-        background-repeat: no-repeat;
-        background-size: 100vw;
-        height: 200px;
-        padding-top: 30px;
-        
-       } 
-       .redes{
-        width: 20vw;
-        text-align: left;
-        padding-left: 40vw;
-        align-content: space-between;
-        padding-top: 2vh;
-        
-       }        
