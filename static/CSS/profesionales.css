@@ -40,9 +40,9 @@
   }
 .titulo-card-medico{
   background-image: url(/static/img/fondo_titulo_profesionales.svg) ;
-   height: 60px;
+  background-image: height 60px ; widht: 460px;
   background-repeat: no-repeat; 
-  width: 460px;
+  
 }
 .titulo-card-medico h2 {
   color: #fff;
