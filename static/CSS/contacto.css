@@ -50,10 +50,39 @@
     
     .form__contenedor {
         display: flex;
-        gap: 10px;
         font-family: var(--base-font);
-        justify-content: left;
+        font-size: var(--font-small);
+        line-height: 35px;
         padding: 40px 0;
+        width: 60%;
     }
 
+    .formulario {
+        display: flex;
+        left: 0;
+    }
+
+    .imagen_deco {
+        padding: 40px 0;
+        width: 40%;
+    } 
+
+    .boton_enviar {
+        border: 0;
+        background-color: red;
+        border-radius: 10px;
+        color: white;
+        font-family: var(--base-font);
+        font-size: var(--font-xsmall);
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+    .titulos_formularios {
+        margin: 20px 0;
+        font-family: var(--base-font);
+        font-size: var(--font-medium);
+        font-weight: 600;
+        color: red;
+    }
     

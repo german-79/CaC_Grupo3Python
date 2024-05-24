@@ -50,7 +50,7 @@ html {
 }
 
 main {
-    padding: var(--spacing-28) 0;
+    padding: var(--spacing-36) 0;
 }
 
 a {
@@ -119,5 +119,9 @@ img {
     padding: 5px;
     max-width: 450px;
     line-height: var(--font-small);
+}
+
+.text_institucional {
+    line-height: var(--font-medium);
 }
 
