@@ -4,28 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MediQi // Medicina Tradicional CHINA</title>
-    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/footer.css">
+    <title>MediQi // Terapias</title>
+    <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/profesionales_final.css">
 </head>
 
 <body>
+
     <!-- Inicio Header -->
     <header>
         <nav class="navbar container">
             <picture class="navbar__isologo_rec">
-                <a href="index.html"><img src="/static/img/Isologotipo_MediQi_H.svg"
+                <a href="../index.html"><img src="../static/img/Isologotipo_MediQi_H.svg"
                         alt="MediQi // Medicina Tradicional CHINA"></a>
             </picture>
             <ul class="navbar__login">
                 <li class="navbar__login__item">
-                    <a class="navbar__login__link" href="templates/login.html">INGRESAR</a>
+                    <a class="navbar__login__link" href="../index_intranet.html">IntraNet</a>
                 </li>
                 <li>
                     <picture class="filete_header_login">
-                        <img src="static/img/filete_header_login.svg" alt="">
+                        <img src="../static/img/filete_header_login.svg" alt="">
                     </picture>
                 </li>
                 <li class="navbar__login__icono">
@@ -40,48 +42,42 @@
             </ul>
             <ul class="navbar__menu">
                 <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_1" href="index.html">MEDIQI</a>
+                    <a class="navbar__menu__link_1" href="../index.html">MEDIQI</a>
                 </li>
                 <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_2" href="templates/terapias.html">TERAPIAS</a>
+                    <a class="navbar__menu__link_3" href="../templates/profesionales.html">PROFESIONALES</a>
                 </li>
                 <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_3" href="templates/profesionales.html">PROFESIONALES</a>
-                </li>
-                <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_4" href="templates/contacto.html">CONTACTO</a>
+                    <a class="navbar__menu__link_4" href="../templates/contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Fin Header -->
 
+
+    <!-- Inicio Main-->
+    
     <section class="hero__slide">
         <article class="hero__content container">
-            <h1 class="hero__titulo">MediQi</h1>
-            <p class="hero__bajada_slide">¡Únete a la experiencia MediQi y descubre el arte de sanar con la Medicina Tradicional China!</p>
+            <h1 class="hero__titulo">Ingreso a IntraNet</h1>
+            <p class="hero__bajada_slide">Ingrese su Usuario y Contraseña que le permitira acceder a la IntraNet de Administración.</p>
+            <form method="post" action="{{ url_for('login') }}">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Iniciar sesión</button>
+            </form>
         </article>
     </section>
-    <main class="container">
-        <p class="text_institucional">¡Bienvenido a Mediqi! 
-            <br><br>
-            En Mediqi, nos enorgullecemos de ofrecer más que servicios de Medicina Tradicinal China; somos guardianes de
-            una tradición milenaria, con más de dos décadas de experiencia dedicadas al bienestar de nuestros pacientes.
-            <br><br>
-            ¿Qué nos distingue?
-            Nuestro compromiso radica en brindar atención integral, guiada por los principios de la Medicina Tradicional
-            China. Contamos con un equipo de profesionales altamente capacitados y una cuidadosa selección de insumos
-            que garantizan tratamientos efectivos y personalizados para cada individuo.
-            Explora nuestra amplia gama de terapias, que incluyen desde acupuntura hasta fitoterapia y moxibustión. Cada
-            sesión está diseñada para restablecer el equilibrio natural del cuerpo y promover una salud óptima.
-            En Mediqi, creemos en el poder de la conexión humana. Por eso, te invitamos a ponerte en contacto con
-            nosotros para descubrir cómo podemos acompañarte en tu viaje hacia una vida más saludable y armoniosa.
-            <br><br>
-            ¡Únete a la experiencia MediQi y descubre el arte de sanar con la Medicina Tradicional China!
 
-        </p>
-        <div id="ws">   <a href="https://api.whatsapp.com/send?phone=5493413894234&text=Consulta%20desde%20mi%20web%20" target="_blank"><img src="/static/img/icons8-whatsapp.svg" alt="logo de whatsapp"></a> </div>
+    <main class="container">
+
+
+
     </main>
+    <!-- Fin Main-->
 
     <!-- Inicio Footer -->
     <footer>
@@ -89,7 +85,7 @@
             <nav class="navbar_footer container">
                 <div class="navbar_footer__isologo_v">
                     <picture>
-                        <a href="index.html"><img src="static/img/Isologotipo_MediQi_V_Blanco.svg"
+                        <a href="../index.html"><img src="../static/img/Isologotipo_MediQi_V_Blanco.svg"
                                 alt="MediQi // Medicina Tradicional CHINA"></a>
                     </picture>
                 </div>
@@ -103,22 +99,21 @@
                 </div>
                 <div class="navbar_footer__menu">
                     <picture class="filete_footer_large">
-                        <img src="static/img/filete_footer_large.svg" alt="">
+                        <img src="../static/img/filete_footer_large.svg" alt="">
                     </picture>
                     <ul class="navbar_footer__menu__items">
-                        <li class="navbar_footer__item"><a href="index.html">MEDIQI</a></li>
-                        <li class="navbar_footer__item"><a href="templates/terapias.html">TERAPIAS</a></li>
-                        <li class="navbar_footer__item"><a href="templates/profesionales.html">PROFESIONALES</a></li>
-                        <li class="navbar_footer__item"><a href="templates/contacto.html">CONTACTO</a></li>
+                        <li class="navbar_footer__item"><a href="../Index.html">MEDIQI</a></li>
+                        <li class="navbar_footer__item"><a href="../templates/profesionales.html">PROFESIONALES</a></li>
+                        <li class="navbar_footer__item"><a href="../templates/contacto.html">CONTACTO</a></li>
                     </ul>
                 </div>
                 <div class="navbar_footer__login">
                     <picture class="filete_footer_small">
-                        <img src="static/img/filete_footer_small.svg" alt="">
+                        <img src="../static/img/filete_footer_small.svg" alt="">
                     </picture>
                     <ul class="navbar_footer__login__items">
-                        <li class="navbar_footer__item"><a href="templates/login.html">INGRESAR</a></li>
-                        <li class="navbar_footer__item"><a href="templates/registrese.html">REGISTRESE</a></li>
+                        <li class="navbar_footer__item"><a href="../templates/login.html">INGRESAR</a></li>
+                        <li class="navbar_footer__item"><a href="../templates/registrese.html">REGISTRESE</a></li>
                     </ul>
                 </div>
                 <div>
@@ -138,12 +133,16 @@
         </div>
         <div class="banda_bg__footer_gris">
             <picture class="deco_footer_roja">
-                <img src="static/img/deco_footer_roja.svg" alt="">
+                <img src="../static/img/deco_footer_roja.svg" alt="">
             </picture>
         </div>
     </footer>
     <!-- Fin Footer -->
 
+    <script src="../static/js/editar_profesional.js"></script>
+    <script src="../static/js/datos_editar.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="static/js/tabla_profesionales.js"></script>
 </body>
 
 </html>
