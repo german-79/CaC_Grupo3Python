@@ -115,7 +115,7 @@ users = {
 @app.route('/home')
 def home():
     if 'username' in session:
-        return render_template('../Front/index_intranet.html', username=session['username'])
+        return render_template('Front/index_intranet.html', username=session['username'])
     return redirect(url_for('login'))
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -128,7 +128,7 @@ def login():
             return redirect(url_for('home'))
         else:
             flash('Credenciales inválidas')
-    return render_template('login.html')
+    return render_template('../Front/templates/login.html')
 
 @app.route('/logout')
 def logout():
