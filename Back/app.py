@@ -1,6 +1,9 @@
 #  Importar las herramientas
 # Acceder a las herramientas para crear la app web
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template,  redirect, url_for, session, flash
+import os
+
+
 
 # Para manipular la DB
 from flask_sqlalchemy import SQLAlchemy 
@@ -10,6 +13,10 @@ from flask_cors import CORS
 
 # Crear la app
 app = Flask(__name__)
+
+app.secret_key = os.urandom(15)  # clave aleatoria segura
+
+
 
 # permita acceder desde el frontend al backend
 CORS(app)
@@ -130,11 +137,8 @@ if __name__ == "__main__":
 
 #agrego German
 
-from flask import Flask, render_template, request, redirect, url_for, session, flash
-import os
+#app = Flask(__name__, template_folder='Front/templates')
 
-app = Flask(__name__, template_folder='Front/templates')
-app.secret_key = os.urandom(15)  # clave aleatoria segura
 
 # Usuarios de prueba (nombre de usuario: contraseña)
 users = {
@@ -142,7 +146,7 @@ users = {
     'prueba2': '4321'
 }
 
-@app.route('/')
+
 def home():
     if 'username' in session:
         return render_template('index_intranet.html', username=session['username'])
