@@ -149,7 +149,7 @@ users = {
 
 def home():
     if 'username' in session:
-        return render_template('index_intranet.html', username=session['username'])
+        return render_template('\\index_intranet.html', username=session['username'])
     return redirect(url_for('login'))
 
 @app.route('/login', methods=['GET', 'POST'])
