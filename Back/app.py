@@ -1,4 +1,3 @@
-# Importar las herramientas necesarias
 from flask import Flask, request, jsonify, render_template, redirect, url_for, session, flash
 import os
 from flask_sqlalchemy import SQLAlchemy
