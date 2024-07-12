@@ -18,7 +18,7 @@ CORS(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://usuario:contraseña@localhost:3306/nombre_de_la_base_de_datos'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:R1657P*.@localhost:3306/mediqi_2024'
 #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://German79:emy23ger@German79.mysql.pythonanywhere-services.com/German79$default'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://German79:emy23ger@German79.mysql.pythonanywhere.com/German79$default'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Crear un objeto db, para informar a la app que se trabajará con sqlalchemy
