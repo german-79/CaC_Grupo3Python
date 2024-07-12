@@ -1,9 +1,6 @@
 #  Importar las herramientas
 # Acceder a las herramientas para crear la app web
-from flask import Flask, request, jsonify, render_template,  redirect, url_for, session, flash
-import os
-
-
+from flask import Flask, request, jsonify
 
 # Para manipular la DB
 from flask_sqlalchemy import SQLAlchemy 
@@ -13,10 +10,6 @@ from flask_cors import CORS
 
 # Crear la app
 app = Flask(__name__)
-
-app.secret_key = os.urandom(15)  # clave aleatoria segura
-
-
 
 # permita acceder desde el frontend al backend
 CORS(app)
@@ -131,44 +124,5 @@ def borrar(id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
-
-
-#agrego German
-
-#app = Flask(__name__, template_folder='Front/templates')
-
-
-# Usuarios de prueba (nombre de usuario: contraseña)
-users = {
-    'prueba1': '1234',
-    'prueba2': '4321'
-}
-
-
-def home():
-    if 'username' in session:
-        return render_template('index_intranet.html', username=session['username'])
-    return redirect(url_for('login'))
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        if username in users and users[username] == password:
-            session['username'] = username
-            return redirect(url_for('home'))
-        else:
-            flash('Credenciales inválidas')
-    return render_template('login.html')
-
-@app.route('/logout')
-def logout():
-    session.pop('username', None)
-    return redirect(url_for('login'))
-
-if __name__ == '__main__':
     app.run(debug=True)
 

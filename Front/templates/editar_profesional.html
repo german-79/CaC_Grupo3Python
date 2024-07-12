@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="../static/css/profesionales_final.css">
+    <link rel="stylesheet" href="../static/css/intranet.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                     <a class="navbar__menu__link_1" href="../index.html">MEDIQI</a>
                 </li>
                 <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_3" href="../templates/profesionales.html">PROFESIONALES</a>
+                    <a class="navbar__menu__link_3" href="../templates/profesionales_final.html">PROFESIONALES</a>
                 </li>
                 <li class="navbar__menu__item">
                     <a class="navbar__menu__link_4" href="../templates/contacto.html">CONTACTO</a>
@@ -61,41 +62,31 @@
     <section class="hero__slide">
         <article class="hero__content container">
             <h1 class="hero__titulo">Actualizar Datos de Profesional</h1>
-            <p class="hero__bajada_slide">Usted podra cargar, actualizar o eliminar profesionales según las novedades que vayan surgiendo en las prestaciónes de servicios.</p>
+            <p class="hero__bajada_slide_intranet">Usted podra cargar, actualizar o eliminar profesionales según las novedades que vayan surgiendo en las prestaciónes de servicios.</p>
             <form>
-                   
-                <div>
-                    <label for="id">ID</label>
-                    <input type="number" name="id" id="id" disabled>
-                </div>
         
+                <label class="label__intranet" for="id">ID</label>
+                <input class="input__intranet" type="text" name="id" id="id" disable><br>
+
+                <label class="label__intranet" for="nombre">Nombre</label>
+                <input class="input__intranet" type="text" name="nombre" id="nombre"><br>
+            
+                <label class="label__intranet" for="apellido">Apellido:</label>
+                <input class="input__intranet" type="text" name="apellido" id="apellido"><br>
+
+                <label class="label__intranet" for="matricula">Matricula:</label>
+                <input class="input__intranet" type="number" name="matricula" id="matricula"><br>
+            
+                <label for="terapia" class="label__intranet">Terapia:</label>
+                <input type="text" name="terapia" id="terapia" class="input__intranet"><br>
+            
+                <label class="label__intranet" for="imagen">Imagen:</label>
+                <input class="input__intranet" type="text" name="imagen" id="imagen"><br>
+
                 <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <button class="modificar" type="button" onclick="modificar()">Modificar</button>
                 </div>
-
-                <div class="entrada">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido">
-                </div>
-
-                <div class="entrada">
-                    <label for="matricula">Matricula:</label>
-                    <input type="number" name="matricula" id="matricula">
-                </div>
-
-                <div class="entrada">
-                    <label for="terapia">Terapia:</label>
-                    <input type="text" name="terapia" id="terapia">
-                </div>
-
-                <div class="entrada">
-                    <label for="imagen">Imagen:</label>
-                    <input type="text" name="imagen" id="imagen">
-                </div>
-
                 
-                <button class="modificar" type="button" onclick="modificar()">Modificar</button>
             </form>
         </article>
     </section>
@@ -116,7 +107,7 @@
                     <section v-else>
                         
                         <div >
-                            <table class="tabla">
+                            <table class="listado__profesionales">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -138,7 +129,7 @@
                                         <td>{{profesional.matricula}}</td>
                                         <td>{{profesional.terapia}}</td>
                                         <td>
-                                            <img :src="profesional.imagen" alt="">
+                                            <img :src="profesional.imagen" class="filas__tabla" alt="">
                                         </td>
                                         <td>
                                             <button type="button"  v-on:click="eliminar(profesional.id)">Eliminar</button>
@@ -193,7 +184,7 @@
                         <img src="../static/img/filete_footer_small.svg" alt="">
                     </picture>
                     <ul class="navbar_footer__login__items">
-                        <li class="navbar_footer__item"><a href="../templates/login.html">INGRESAR</a></li>
+                        <li class="navbar_footer__item"><a href="../index_intranet.html">INGRESAR</a></li>
                         <li class="navbar_footer__item"><a href="../templates/registrese.html">REGISTRESE</a></li>
                     </ul>
                 </div>
@@ -223,7 +214,7 @@
     <script src="../static/js/editar_profesional.js"></script>
     <script src="../static/js/datos_editar.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="static/js/tabla_profesionales.js"></script>
+    <script src="../static/js/tabla_profesionales.js"></script>
 </body>
 
 </html>

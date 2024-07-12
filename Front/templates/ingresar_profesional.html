@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <link rel="stylesheet" href="../static/css/profesionales_final.css">
+    <link rel="stylesheet" href="../static/css/intranet.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                     <a class="navbar__menu__link_1" href="../index.html">MEDIQI</a>
                 </li>
                 <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_3" href="../templates/profesionales.html">PROFESIONALES</a>
+                    <a class="navbar__menu__link_3" href="../templates/profesionales_final.html">PROFESIONALES</a>
                 </li>
                 <li class="navbar__menu__item">
                     <a class="navbar__menu__link_4" href="../templates/contacto.html">CONTACTO</a>
@@ -61,38 +62,27 @@
     <section class="hero__slide">
         <article class="hero__content container">
             <h1 class="hero__titulo">Ingresar Nuevo Profesional</h1>
-            <p class="hero__bajada_slide">Usted esta a punto de ingresar a la base un Nuevo Profesional! Por favor compruebe que los datos ingresados sean correctos. Gracias!</p>
+            <p class="hero__bajada_slide_intranet">Usted esta a punto de ingresar a la base un Nuevo Profesional! Por favor compruebe que los datos ingresados sean correctos. Gracias!</p>
             
             <form action="">
-        
-                <div class="entrada">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-
-                <div class="entrada">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido">
-                </div>
-
-                <div class="entrada">
-                    <label for="matricula">Matricula:</label>
-                    <input type="number" name="matricula" id="matricula">
-                </div>
-
-                <div class="entrada">
-                    <label for="terapia">Terapia:</label>
-                    <input type="text" name="terapia" id="terapia">
-                </div>
-
-                <div class="entrada">
-                    <label for="imagen">Imagen:</label>
-                    <input type="text" name="imagen" id="imagen">
-                </div>
                 
-                <div class="entrada">
+                    <label class="label__intranet" for="nombre">Nombre</label>
+                    <input class="input__intranet" type="text" name="nombre" id="nombre"><br>
+                
+                    <label class="label__intranet" for="apellido">Apellido:</label>
+                    <input class="input__intranet" type="text" name="apellido" id="apellido"><br>
+
+                    <label class="label__intranet" for="matricula">Matricula:</label>
+                    <input class="input__intranet" type="text" name="matricula" id="matricula"><br>
+                
+                    <label class="label__intranet" for="terapia">Terapia:</label>
+                    <input class="input__intranet" type="text" name="terapia" id="terapia"><br>
+                
+                    <label class="label__intranet" for="imagen">Imagen:</label>
+                    <input class="input__intranet" type="text" name="imagen" id="imagen"><br>
+                
                     <button class="modificar" type="button" onclick="guardar()">Guardar</button>
-                </div>
+                
             </form>
 
         </article>
@@ -114,7 +104,7 @@
                     <section v-else>
                         
                         <div >
-                            <table class="tabla">
+                            <table class="listado__profesionales">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -130,13 +120,13 @@
                                 <tbody>
                                    
                                     <tr v-for="profesional in profesionales">
-                                        <td >{{profesional.id}}</td>
+                                        <td>{{profesional.id}}</td>
                                         <td>{{profesional.nombre}}</td>
                                         <td>{{profesional.apellido}}</td>
                                         <td>{{profesional.matricula}}</td>
                                         <td>{{profesional.terapia}}</td>
                                         <td>
-                                            <img :src="profesional.imagen" alt="">
+                                            <img :src="profesional.imagen" class="filas__tabla" alt="">
                                         </td>
                                         <td>
                                             <button type="button"  v-on:click="eliminar(profesional.id)">Eliminar</button>
@@ -191,7 +181,7 @@
                         <img src="../static/img/filete_footer_small.svg" alt="">
                     </picture>
                     <ul class="navbar_footer__login__items">
-                        <li class="navbar_footer__item"><a href="../templates/login.html">INGRESAR</a></li>
+                        <li class="navbar_footer__item"><a href="../index_intranet.html">INGRESAR</a></li>
                         <li class="navbar_footer__item"><a href="../templates/registrese.html">REGISTRESE</a></li>
                     </ul>
                 </div>

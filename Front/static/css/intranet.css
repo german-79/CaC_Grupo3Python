@@ -66,10 +66,10 @@
     margin-bottom: 10px;
 }
 
-.hero__bajada_slide {
+.hero__bajada_slide_intranet {
     color: var(--light-solid);
     padding: 5px 0;
-    max-width: 450px;
+    max-width: 650px;
     line-height: var(--font-xsmall);
 }
 
@@ -93,10 +93,48 @@
     color: var(--secondary-solid);
 }
 
-.tabla {
+.label__intranet {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    font-size: var(--font-small);
+    color: var(--light-solid);
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+.content__label__intranet {
+    width: 100px;
+}
+
+.input__intranet {
+    border-style: none;
+    width: 400px;
+    font-size: var(--font-small);
+    border-radius: 6px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.listado__profesionales {
     width: 100%;
+    border-collapse: collapse;
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: var(--font-small);
     justify-content: center;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.filas__tabla {
+    height: 10vh;
+    width: auto;
+}
+
+tr:nth-child(even) {
+    background-color: var(--secondary-300);
 }

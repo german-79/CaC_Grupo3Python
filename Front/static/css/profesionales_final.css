@@ -92,3 +92,21 @@
     font-size: var(--font-small);
     color: var(--secondary-solid);
 }
+
+.content__profesionales {
+    display: grid;
+    grid-template-areas:  'titulo titulo titulo' 
+                            'card card card';
+    grid-template-columns: auto auto auto;
+    gap: var(--spacing-16);
+}
+
+.titulo__cards__medicos {
+    grid-area: titulo;
+    justify-items: left;
+}
+
+.card__medico {
+    display: inline-block;
+    grid-area: card;
+}

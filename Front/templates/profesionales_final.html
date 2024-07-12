@@ -23,7 +23,7 @@
             </picture>
             <ul class="navbar__login">
                 <li class="navbar__login__item">
-                    <a class="navbar__login__link" href="../templates/login.html">INGRESAR</a>
+                    <a class="navbar__login__link" href="../index_intranet.html">INGRESAR</a>
                 </li>
                 <li>
                     <picture class="filete_header_login">
@@ -45,7 +45,7 @@
                     <a class="navbar__menu__link_1" href="../index.html">MEDIQI</a>
                 </li>
                 <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_3" href="../templates/profesionales.html">PROFESIONALES</a>
+                    <a class="navbar__menu__link_3" href="../templates/profesionales_final.html">PROFESIONALES</a>
                 </li>
                 <li class="navbar__menu__item">
                     <a class="navbar__menu__link_4" href="../templates/contacto.html">CONTACTO</a>
@@ -74,114 +74,37 @@
 
     <main class="container">
 
-        <!-- Auriculoterapia -->
-        <section class="terapia">
-            <div class="terapia__content">
-                <img src="../static/img/Terapias_Auriculo_Seccion.png" alt="Auriculoterapia" class="terapia__image">
-                <div class="terapia__text">
-                    <h2>Auriculoterapia</h2>
-                    <div class="filete__terapias">
-                        <img src="../static/img/Filete_titulo_Terapia_01.svg" alt="filete1">
-                    </div>
-                    <p>La auriculoterapia es una técnica de la medicina tradicional china que implica estimular puntos
-                        específicos en el pabellón auricular (oreja) para tratar diversas afecciones. Esta terapia se
-                        recomienda para:</p>
-                    <ul>
-                        <li>Aliviar el dolor.</li>
-                        <li>Reducir el estrés.</li>
-                        <li>Tratar adicciones como el tabaquismo.</li>
-                        <li>Mejorar el sueño.</li>
-                        <li>Equilibrar el sistema energético del cuerpo.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <section id="app">
+            
+        <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <p>Cargando .....</p>
+                    </section>
 
-        <!-- Acupuntura -->
-        <section class="terapia">
-            <div class="terapia__content">
-                <div class="terapia__text">
-                    <h2>Acupuntura</h2>
-                    <div class="filete__terapias">
-                        <img src="../static/img/Filete_titulo_Terapia_02.svg" alt="filete2">
-                    </div>
-                    <p>La acupuntura es una técnica de la medicina tradicional china que implica la inserción de agujas
-                        delgadas en puntos específicos del cuerpo. Esta terapia se recomienda para:</p>
-                    <ul>
-                        <li>Aliviar el dolor.</li>
-                        <li>Mejorar la circulación.</li>
-                        <li>Fortalecer el sistema inmunológico.</li>
-                        <li>Equilibrar la energía del cuerpo.</li>
-                    </ul>
-                </div>
-                <img src="../static/img/Terapias_Acupuntura_Seccion.png" alt="Acupuntura" class="terapia__image">
-            </div>
-        </section>
+                    <section class="content__profesionales"  v-else>
 
-        <!-- Moxibustión -->
-        <section class="terapia">
-            <div class="terapia__content">
-                <img src="../static/img/Terapias_Moxibustion_Seccion.png" alt="Moxibustión" class="terapia__image">
-                <div class="terapia__text">
+                        <div>
+            
+                            <div class="titulo__cards__medicos">
+                                <h2>TERAPEUTAS DE AURICULOTERAPIA</h2>
+                            </div>
 
-                    <h2>Moxibustión</h2>
-                    <div class="filete__terapias">
-                        <img src="../static/img/Filete_titulo_Terapia_01.svg" alt="filete1">
-                    </div>
-                    <p>La moxibustión es una terapia de la medicina tradicional china que utiliza el calor generado por
-                        la combustión de la planta Artemisa para estimular puntos específicos del cuerpo. Esta terapia
-                        se recomienda para:</p>
-                    <ul>
-                        <li>Aliviar el dolor muscular y articular.</li>
-                        <li>Mejorar la circulación sanguínea.</li>
-                        <li>Fortalecer el sistema inmunológico.</li>
-                        <li>Promover la salud general y el bienestar.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                            <div class="card__medico" v-for="profesional in profesionales">
+                                <div>
+                                    <img :src="profesional.imagen" alt="{{profesional.nombre + profesional.apellido}}">
+                                </div>
+                                <div>{{profesional.nombre + " " + profesional.apellido}}</div>
+                                <div>MP {{profesional.matricula}}</div>
+                                <div>{{profesional.terapia}}</div>
+                            </div>
 
-        <!-- Masajes Tuina -->
-        <section class="terapia">
-            <div class="terapia__content">
-                <div class="terapia__text">
-                    <h2>Masajes Tuina</h2>
-                    <div class="filete__terapias">
-                        <img src="../static/img/Filete_titulo_Terapia_02.svg" alt="filete2">
-                    </div>
-                    <p>El masaje Tuina es una técnica de la medicina tradicional china que combina masaje y manipulación
-                        para tratar diversas afecciones. Esta terapia se recomienda para:</p>
-                    <ul>
-                        <li>Aliviar el dolor muscular y articular.</li>
-                        <li>Reducir el estrés y la ansiedad.</li>
-                        <li>Mejorar la circulación sanguínea.</li>
-                        <li>Promover la relajación general.</li>
-                    </ul>
-                </div>
-                <img src="../static/img/Terapias_Tuina_Seccion.png" alt="Masajes Tuina" class="terapia__image">
-            </div>
-        </section>
 
-        <!-- Ventosas -->
-        <section class="terapia">
-            <div class="terapia__content">
-                <img src="../static/img/Terapias_Ventosas_Seccion.png" alt="Ventosas" class="terapia__image">
-                <div class="terapia__text">
-                    <h2>Ventosas</h2>
-                    <div class="filete__terapias">
-                        <img src="../static/img/Filete_titulo_Terapia_01.svg" alt="filete1">
-                    </div>
-                    <p>La terapia con ventosas es una práctica de la medicina tradicional china que utiliza vasos de
-                        succión para mejorar la circulación y aliviar el dolor. Esta terapia se recomienda para:</p>
-                    <ul>
-                        <li>Aliviar el dolor muscular y articular.</li>
-                        <li>Mejorar la circulación sanguínea.</li>
-                        <li>Reducir la inflamación.</li>
-                        <li>Promover la relajación y el bienestar general.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        
     </main>
     <!-- Fin Main-->
 
@@ -244,6 +167,12 @@
         </div>
     </footer>
     <!-- Fin Footer -->
+
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../static/js/datos_editar.js"></script>
+    <script src="../static/js/tabla_profesionales.js"></script>
+
 </body>
 
 </html>
