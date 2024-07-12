@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        url:"http://127.0.0.1:5000/profesionales", // Retorna todos los registro de la tabla productos
+        url:"https://German79.mysql.pythonanywhere.com/profesionales", // Retorna todos los registro de la tabla productos
         profesionales:[],
         error:false,
         cargando:true
