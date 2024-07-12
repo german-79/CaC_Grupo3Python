@@ -14,7 +14,6 @@ app = Flask(__name__)
 # permita acceder desde el frontend al backend
 CORS(app)
 
-
 # Configurar a la app la DB
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://usuario:contraseña@localhost:3306/nombre_de_la_base_de_datos'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:R1657P*.@localhost:3306/mediqi_2024'
@@ -22,7 +21,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Crear un objeto db, para informar a la app que se trabajará con sqlalchemy
 db = SQLAlchemy(app)
-
 
 # Definir la tabla 
 class Profesional(db.Model):
@@ -82,7 +80,6 @@ def profesionales():
 
     return jsonify(data_serializada)
 
-
 # Modificar un registro
 @app.route('/update/<id>', methods=['PUT'])
 def update(id):
@@ -121,7 +118,6 @@ def borrar(id):
     data_serializada = [{"id":profesional.id, "nombre":profesional.nombre, "apellido":profesional.apellido, "matricula":profesional.matricula, "terapia":profesional.terapia, "imagen":profesional.imagen}]
 
     return jsonify(data_serializada)
-
 
 if __name__ == "__main__":
     app.run(debug=True)
