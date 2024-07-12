@@ -16,7 +16,7 @@ function modificar() {
 
     console.log(datos);
 
-    let url = "http://localhost:5000/update/"+id
+    let url = "https://German79.mysql.pythonanywhere.com/update/"+id
     var options = {
         body: JSON.stringify(datos),
         method: 'PUT',

@@ -31,7 +31,7 @@ const { createApp } = Vue
         // el id se necesita para buscar en la DB y eliminarlo
         eliminar(id) {
             
-            const url = 'http://localhost:5000/borrar/'+id;
+            const url = 'https://German79.mysql.pythonanywhere.com/borrar/'+id;
             var options = {
                 method: 'DELETE',
                 
