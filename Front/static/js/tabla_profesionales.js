@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        url:"https://German79.mysql.pythonanywhere.com/profesionales", // Retorna todos los registro de la tabla productos
+        url:'https://german79.pythonanywhere.com/profesionales', // Retorna todos los registro de la tabla productos
         profesionales:[],
         error:false,
         cargando:true
@@ -31,7 +31,7 @@ const { createApp } = Vue
         // el id se necesita para buscar en la DB y eliminarlo
         eliminar(id) {
             
-            const url = 'https://German79.mysql.pythonanywhere.com/borrar/'+id;
+            const url = 'https://german79.pythonanywhere.com/borrar/'+id;
             var options = {
                 method: 'DELETE',
                 
