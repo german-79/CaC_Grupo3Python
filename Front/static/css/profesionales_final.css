@@ -98,15 +98,48 @@
     grid-template-areas:  'titulo titulo titulo' 
                             'card card card';
     grid-template-columns: auto auto auto;
-    gap: var(--spacing-16);
+    column-gap: var(--spacing-36);
 }
 
 .titulo__cards__medicos {
     grid-area: titulo;
-    justify-items: left;
+    text-align: left;
+    align-content: center;
+    background-image: url(../img/fondo_titulo_profesionales.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: var(--light-solid);
+    background-size: 733px 38px;
+    padding-left: var(--spacing-28);
+    font-size: var(--font-medium);
+    font-weight: 400;
+    width: 733px;
+    height: 38px;
 }
 
 .card__medico {
     display: inline-block;
     grid-area: card;
+    text-align: center;
+    margin-top: var(--spacing-16);
+}
+
+.nombre__medico {
+    font-size: var(--font-large);
+    color: var(--secondary-solid);
+    font-weight: 400;
+    padding-bottom: var(--spacing-8);
+}
+
+.matricula__medico {
+    font-size: var(--font-xsmall);
+    color: var(--secondary-solid);
+    padding-bottom: var(--spacing-8);
+}
+
+.terapia__medico {
+    font-size: var(--font-medium);
+    color: var(--primary-solid);
+    font-weight: 400;
+    padding-bottom: var(--spacing-8);
 }

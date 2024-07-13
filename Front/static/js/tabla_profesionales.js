@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        url:'https://german79.pythonanywhere.com/profesionales', // Retorna todos los registro de la tabla productos
+        url:"https://german79.pythonanywhere.com/profesionales", // Retorna todos los registro de la tabla productos
         profesionales:[],
         error:false,
         cargando:true

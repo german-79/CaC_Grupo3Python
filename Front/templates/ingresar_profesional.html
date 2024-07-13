@@ -63,25 +63,25 @@
         <article class="hero__content container">
             <h1 class="hero__titulo">Ingresar Nuevo Profesional</h1>
             <p class="hero__bajada_slide_intranet">Usted esta a punto de ingresar a la base un Nuevo Profesional! Por favor compruebe que los datos ingresados sean correctos. Gracias!</p>
-            
-            <form action="">
+            <br>
+            <form>
                 
                     <label class="label__intranet" for="nombre">Nombre</label>
                     <input class="input__intranet" type="text" name="nombre" id="nombre"><br>
                 
-                    <label class="label__intranet" for="apellido">Apellido:</label>
+                    <label class="label__intranet" for="apellido">Apellido</label>
                     <input class="input__intranet" type="text" name="apellido" id="apellido"><br>
 
-                    <label class="label__intranet" for="matricula">Matricula:</label>
+                    <label class="label__intranet" for="matricula">Matricula</label>
                     <input class="input__intranet" type="text" name="matricula" id="matricula"><br>
                 
-                    <label class="label__intranet" for="terapia">Terapia:</label>
+                    <label class="label__intranet" for="terapia">Terapia</label>
                     <input class="input__intranet" type="text" name="terapia" id="terapia"><br>
                 
-                    <label class="label__intranet" for="imagen">Imagen:</label>
+                    <label class="label__intranet" for="imagen">Imagen</label>
                     <input class="input__intranet" type="text" name="imagen" id="imagen"><br>
                 
-                    <button class="modificar" type="button" onclick="guardar()">Guardar</button>
+                    <button class="boton_intranet_slide" type="button" onclick="guardar()">GUARDAR</button>
                 
             </form>
 
@@ -132,7 +132,7 @@
                                             <button type="button"  v-on:click="eliminar(profesional.id)">Eliminar</button>
                                         </td>
                                         <td>
-                                            <a class="boton" :href="'templates/editar_profesional.html?id='+ profesional.id+'&nombre='+ profesional.nombre+ '&apellido='+ profesional.apellido+ '&matricula='+ profesional.matricula+ '&terapia='+ profesional.terapia+ '&imagen='+profesional.imagen">Editar</a>
+                                            <a class="boton" :href="'editar_profesional.html?id='+ profesional.id+'&nombre='+ profesional.nombre+ '&apellido='+ profesional.apellido+ '&matricula='+ profesional.matricula+ '&terapia='+ profesional.terapia+ '&imagen='+profesional.imagen">Editar</a>
                                         </td>
                                     </tr>
                                 </tbody>

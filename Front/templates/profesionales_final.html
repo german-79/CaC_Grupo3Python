@@ -45,7 +45,7 @@
                     <a class="navbar__menu__link_1" href="../index.html">MEDIQI</a>
                 </li>
                 <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_3" href="../templates/profesionales_final.html">PROFESIONALES</a>
+                    <a class="navbar__menu__link_2" href="../templates/terapias.html">TERAPIAS</a>
                 </li>
                 <li class="navbar__menu__item">
                     <a class="navbar__menu__link_4" href="../templates/contacto.html">CONTACTO</a>
@@ -87,16 +87,16 @@
                         <div>
             
                             <div class="titulo__cards__medicos">
-                                <h2>TERAPEUTAS DE AURICULOTERAPIA</h2>
+                                Listado de PROFESIONALES
                             </div>
 
                             <div class="card__medico" v-for="profesional in profesionales">
                                 <div>
                                     <img :src="profesional.imagen" alt="{{profesional.nombre + profesional.apellido}}">
                                 </div>
-                                <div>{{profesional.nombre + " " + profesional.apellido}}</div>
-                                <div>MP {{profesional.matricula}}</div>
-                                <div>{{profesional.terapia}}</div>
+                                <div class="nombre__medico">{{profesional.nombre + " " + profesional.apellido}}</div>
+                                <div class="matricula__medico">MP {{profesional.matricula}}</div>
+                                <div class="terapia__medico">{{profesional.terapia}}</div>
                             </div>
 
 

@@ -5,6 +5,7 @@
     --secondary-solid: #3d3d3f;
     --secondary-600: #868789;
     --secondary-300: #C6C6C6;
+    --secondary-150: #e3e3e3;
 
     --light-solid: #ffffff; 
 
@@ -110,9 +111,9 @@
 .input__intranet {
     border-style: none;
     width: 400px;
-    font-size: var(--font-small);
+    font-size: var(--font-xsmall);
     border-radius: 6px;
-    padding: 4px;
+    padding: 4px 8px;
     margin-bottom: 10px;
 }
 
@@ -123,6 +124,34 @@
     margin-bottom: 30px;
     font-size: var(--font-small);
     justify-content: center;
+}
+
+button {
+    background: none;
+    font-family: var(--base-font);
+    color: var(--primary-solid);
+    font-size: var(--font-xxsmall);
+    border: none;
+    cursor: pointer;
+}
+
+.boton {
+    background: none;
+    font-family: var(--base-font);
+    color: var(--primary-solid);
+    font-size: var(--font-xxsmall);
+    border: none;
+}
+
+.boton_intranet_slide {
+    background: none;
+    font-family: var(--base-font);
+    color: var(--light-solid);
+    font-size: var(--font-xsmall);
+    border: 1px solid var(--light-solid);
+    border-radius: 4px;
+    margin-left: 120px;
+    padding: 4px 8px;
 }
 
 th, td {
@@ -136,5 +165,5 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background-color: var(--secondary-300);
+    background-color: var(--secondary-150);
 }

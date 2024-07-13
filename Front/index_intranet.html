@@ -43,7 +43,10 @@
             </ul>
             <ul class="navbar__menu">
                 <li class="navbar__menu__item">
-                    <a class="navbar__menu__link_1" href="../index.html">MEDIQI</a>
+                    <a class="navbar__menu__link_1" href="index.html">MEDIQI</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a class="navbar__menu__link_2" href="templates/terapias.html">TERAPIAS</a>
                 </li>
                 <li class="navbar__menu__item">
                     <a class="navbar__menu__link_3" href="templates/profesionales_final.html">PROFESIONALES</a>
@@ -61,17 +64,17 @@
     
     <section class="hero__slide">
         <article class="hero__content container">
-            <h1 class="hero__titulo">IntraNet de Administración 01</h1>
-            <p class="hero__bajada_slide">Usted podra Ingresar, Actualizar o Eliminar profesionales según las novedades que vayan surgiendo en las prestaciónes de servicios.</p>
+            <h1 class="hero__titulo">IntraNet de Administración</h1>
+            <p class="hero__bajada_slide_intranet">Usted podra Ingresar, Actualizar o Eliminar profesionales según<br>las novedades que vayan surgiendo en las prestaciónes de servicios.</p>
             <ul>
-                <li class="hero__btn" ><a class="hero__link" href="templates/ingresar_profesional.html">Ingresar Nuevo Porfesional</a></li>
-                <li class="hero__btn" ><a class="hero__link" href="#acupuntura">Listado de Profesionales</a></li>
+                <li class="hero__btn" ><a class="hero__link" href="templates/ingresar_profesional.html">Ingresar Nuevo Profesional</a></li>
+                <li class="hero__btn" ><a class="hero__link" href="#listado_profesionales">Listado de Profesionales</a></li>
                 <!-- <li class="hero__btn" ><a class="hero__link" href="#moxibustion">Eliminar Profesional</a></li> -->
             </ul>
         </article>
     </section>
 
-    <main class="container">
+    <main class="container" id="listado_profesionales">
 
         <!-- Listado de Profesionales -->
         <section>
@@ -109,10 +112,10 @@
                                         <td>{{profesional.matricula}}</td>
                                         <td>{{profesional.terapia}}</td>
                                         <td>
-                                            <img :src="profesional.imagen" alt="">
+                                            <img :src="profesional.imagen" class="filas__tabla" alt="">
                                         </td>
                                         <td>
-                                            <button type="button"  v-on:click="eliminar(profesional.id)">Eliminar</button>
+                                            <button class="boton" type="button"  v-on:click="eliminar(profesional.id)">Eliminar</button>
                                         </td>
                                         <td>
                                             <a class="boton" :href="'templates/editar_profesional.html?id='+ profesional.id+'&nombre='+ profesional.nombre+ '&apellido='+ profesional.apellido+ '&matricula='+ profesional.matricula+ '&terapia='+ profesional.terapia+ '&imagen='+profesional.imagen">Editar</a>
@@ -154,9 +157,9 @@
                         <img src="static/img/filete_footer_large.svg" alt="">
                     </picture>
                     <ul class="navbar_footer__menu__items">
-                        <li class="navbar_footer__item"><a href="../Index.html">MEDIQI</a></li>
-                        <li class="navbar_footer__item"><a href="../templates/profesionales.html">PROFESIONALES</a></li>
-                        <li class="navbar_footer__item"><a href="../templates/contacto.html">CONTACTO</a></li>
+                        <li class="navbar_footer__item"><a href="Index.html">MEDIQI</a></li>
+                        <li class="navbar_footer__item"><a href="templates/profesionales_final.html">PROFESIONALES</a></li>
+                        <li class="navbar_footer__item"><a href="templates/contacto.html">CONTACTO</a></li>
                     </ul>
                 </div>
                 <div class="navbar_footer__login">
@@ -164,8 +167,8 @@
                         <img src="static/img/filete_footer_small.svg" alt="">
                     </picture>
                     <ul class="navbar_footer__login__items">
-                        <li class="navbar_footer__item"><a href="../templates/login.html">INGRESAR</a></li>
-                        <li class="navbar_footer__item"><a href="../templates/registrese.html">REGISTRESE</a></li>
+                        <li class="navbar_footer__item"><a href="index_intranet.html">INGRESAR</a></li>
+                        <li class="navbar_footer__item"><a href="templates/registrese.html">REGISTRESE</a></li>
                     </ul>
                 </div>
                 <div>
@@ -192,6 +195,7 @@
     <!-- Fin Footer -->
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="static/js/datos_editar.js"></script>
     <script src="static/js/tabla_profesionales.js"></script>
 </body>
 
